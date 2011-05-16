@@ -34,6 +34,7 @@ public class SwingComponentCreatorsRepository implements ComponentCreatorsReposi
 	componentCreators.put(ComponentTypes.COMBOBOX, new SwingComboBoxCreator());
 	componentCreators.put(ComponentTypes.CHECKBOX, new SwingCheckBoxCreator());
 	componentCreators.put(ComponentTypes.TEXTAREA, new SwingTextAreaCreator());
+	componentCreators.put(ComponentTypes.SECRET, new SwingSecretFieldCreator());
     }
     
     public ComponentCreator<JComponent> get(String name) {

@@ -20,6 +20,7 @@ import java.awt.FontMetrics;
 
 import javax.swing.JButton;
 import javax.swing.JComboBox;
+import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
 public class SwingUiElementsHelper {
@@ -28,6 +29,11 @@ public class SwingUiElementsHelper {
 	FontMetrics fm = tf.getFontMetrics(tf.getFont());
 //	tf.setPreferredSize(new Dimension(150, fm.getHeight()));
 	return tf;
+    }
+    
+    public static JPasswordField createStandardSecretTextField() {
+	JPasswordField pf = new JPasswordField();
+	return pf;
     }
     
     public static JComboBox createStandardCombo(Object[] values) {
