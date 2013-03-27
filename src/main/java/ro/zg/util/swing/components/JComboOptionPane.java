@@ -60,6 +60,7 @@ public class JComboOptionPane extends JPanel {
 
     private void initTitleLable() {
 	titleLabel = new JLabel(title);
+	titleLabel.setPreferredSize(new Dimension(150, 20));
 	LineBorder border = new LineBorder(Color.BLACK);
 	titleLabel.setBorder(new MetalBorders.TextFieldBorder());
     }
